@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@plugin 'flowbite/plugin';
+
+@plugin "tailwindcss-motion";
 
 @custom-variant dark (&:where(.dark, .dark *));
 

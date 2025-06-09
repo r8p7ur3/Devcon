@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import pentagon from "$lib/images/devcon-items/pentagon.png"
+</script>
+
+<div id="welcome" class="bg-black w-screen h-screen absolute top-20">
+    <div>
+    <img class="duration-5000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    </div>
+
+</div>
