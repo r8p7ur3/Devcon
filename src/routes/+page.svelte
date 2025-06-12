@@ -1,34 +1,17 @@
-<script>
+<script >
     import pentagon from "$lib/images/devcon-items/pentagon.png"
     import corklogo from "$lib/images/devcon-items/logo.png"
     import devcon from "$lib/images/devcon-items/devcon.png"
     import ucc from "$lib/images/devcon-items/ucc.png"
     import { onMount } from "svelte";
+    import IntersectionObserver from "svelte-intersection-observer"
+
+    let div;
+    let intersecting;
 
 
-    // having typescript here since im not sure how to call from dif file, figure out and fix later :/
-    let isVisible = false;
-    let AboutDiv;
-    let Countdown;
-    let Guests;
 
-    //to handle whenever a div comes into view (WiP)
-    onMount(() => {
-    const observer = new IntersectionObserver(
-      ([AboutDiv]) => {
-        observer.observe(AboutDiv.target)
-        if (AboutDiv.isIntersecting) {
-          isVisible = true;
-          observer.unobserve(AboutDiv.target); // only animate once
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-  });
-    
-
-
+   
     //typescript end
 </script>
 <!--fix your pngs to high res at some point-->
@@ -60,8 +43,8 @@
 </div>
 <!-- motion-preset-typewriter not being maintained :( oh well)-->
  <!-- i'll figure something else out-->
-
-<div bind:this={AboutDiv}  class=" bg-black w-screen h-217.5" id="Abouts">
+<IntersectionObserver>
+<div  class=" bg-black w-screen h-217.5" id="About">
     <div class="">
     <h1 class="text-center text-6xl font-extrabold motion-opacity-in-0 motion-delay-800 motion-translate-y-in-100">About</h1>
     </div>
@@ -71,12 +54,18 @@
         <br>and the tech industry. Cork Devcon is an initiative by UCC Netsoc.
     </p>
 </div>
+</IntersectionObserver>
 
-<div bind:this={Countdown} class=" bg-black w-screen h-217.5" id="Countdown">
+<IntersectionObserver>
+<div  class=" bg-black w-screen h-217.5" id="Countdown">
     <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">countdown will be going here (not sure how to do it yet)</p>
 
 </div>
-<div bind:this={Guests} class=" bg-black w-screen h-217.5" id="Guests">
+</IntersectionObserver>
+
+<IntersectionObserver>
+<div  class=" bg-black w-screen h-217.5" id="Guests">
     <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers section, being worked on but i have a good idea going foward</p>
 
 </div>
+</IntersectionObserver>
