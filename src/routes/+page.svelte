@@ -1,13 +1,45 @@
-<script >
+<script>
     import pentagon from "$lib/images/devcon-items/pentagon.png"
     import corklogo from "$lib/images/devcon-items/logo.png"
     import devcon from "$lib/images/devcon-items/devcon.png"
     import ucc from "$lib/images/devcon-items/ucc.png"
-    import { onMount } from "svelte";
-    import IntersectionObserver from "svelte-intersection-observer"
 
-    let div;
-    let intersecting;
+    //for when divs enter viewport
+    // i tried having a dedicated .svelte for it and importing but it wouldn't import script
+    import { onDestroy, onMount } from "svelte";
+
+  let inViewPort = false;
+  /**@type {HTMLElement}*/
+  let root;
+
+  
+
+
+  onMount(() => {
+    if (!root) return //ok so when reloading page there wasn't enough time for the DOM to load before this ran, so if no root 
+    // which is binded to the divs is found it simply keeps going till it is 
+    let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        inViewPort = true;
+        observer.disconnect();
+      }
+    });
+  });
+    observer.observe(root);
+  });
+
+  onDestroy(() => {
+    if (!root) return  //if you have a better idea so i don't have to declare this callback twice please share :3
+    let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        inViewPort = true;
+        observer.disconnect();
+      }
+    });
+    });  });
+
 
 
 
@@ -41,31 +73,34 @@
 
 
 </div>
-<!-- motion-preset-typewriter not being maintained :( oh well)-->
+<!-- motion-preset-typewriter not being maintained -_- (oh well)-->
  <!-- i'll figure something else out-->
-<IntersectionObserver>
-<div  class=" bg-black w-screen h-217.5" id="About">
-    <div class="">
-    <h1 class="text-center text-6xl font-extrabold motion-opacity-in-0 motion-delay-800 motion-translate-y-in-100">About</h1>
-    </div>
-    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Devcon is a Cork-based tech confrence that's held annually in UCC. 
+
+    
+<div bind:this={root} class=" bg-black w-screen h-217.5" id="About">
+    {#if inViewPort === true }
+
+    <h1 class="text-center text-6xl font-extrabold motion-delay-500 motion-opacity-in-0 motion-translate-y-in-100">About</h1>
+    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-200 motion-opacity-in-0 motion-translate-y-in-100">Devcon is a Cork-based tech confrence that's held annually in UCC. 
        <br> It brings awareness to  the exciting and innovative technology developments
         <br>from all across ireland, and helps to bridge the gap between students
         <br>and the tech industry. Cork Devcon is an initiative by UCC Netsoc.
     </p>
+    {/if}
 </div>
-</IntersectionObserver>
 
-<IntersectionObserver>
-<div  class=" bg-black w-screen h-217.5" id="Countdown">
+
+
+ 
+<div bind:this={root}  class=" bg-black w-screen h-217.5" id="Countdown">
     <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">countdown will be going here (not sure how to do it yet)</p>
 
 </div>
-</IntersectionObserver>
 
-<IntersectionObserver>
+
+
 <div  class=" bg-black w-screen h-217.5" id="Guests">
     <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers section, being worked on but i have a good idea going foward</p>
 
 </div>
-</IntersectionObserver>
+
