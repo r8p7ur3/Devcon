@@ -9,8 +9,17 @@
     import { onDestroy, onMount } from "svelte";
 
   let inViewPort = false;
+  let inViewPort2 = false;
+  let inViewPort3 = false;
   /**@type {HTMLElement}*/
   let root;
+  /**@type {HTMLElement}*/
+  let root2;
+  /**@type {HTMLElement}*/
+  let root3;
+  //for tracking
+  let done = false;
+  let countdown
 
   
 
@@ -23,27 +32,34 @@
       if (entry.isIntersecting) {
         inViewPort = true;
         observer.disconnect();
-      }
+      };
+     
+    });
+  });
+   let observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        inViewPort2 = true;
+        observer2.disconnect();
+      };
+     
+    });
+  });
+   let observer3 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        inViewPort3 = true;
+        observer3.disconnect();
+      };
+     
     });
   });
     observer.observe(root);
+    observer2.observe(root2);
+    
   });
 
-  onDestroy(() => {
-    if (!root) return  //if you have a better idea so i don't have to declare this callback twice please share :3
-    let observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        inViewPort = true;
-        observer.disconnect();
-      }
-    });
-    });  });
-
-
-
-
-   
+  
     //typescript end
 </script>
 <!--fix your pngs to high res at some point-->
@@ -77,7 +93,7 @@
  <!-- i'll figure something else out-->
 
     
-<div bind:this={root} class=" bg-black w-screen h-217.5" id="About">
+<div bind:this={root} class=" bg-black w-screen h-257.5" id="About">
     {#if inViewPort === true }
 
     <h1 class="text-center text-6xl font-extrabold motion-delay-500 motion-opacity-in-0 motion-translate-y-in-100">About</h1>
@@ -92,15 +108,13 @@
 
 
  
-<div bind:this={root}  class=" bg-black w-screen h-217.5" id="Countdown">
-    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">countdown will be going here (not sure how to do it yet)</p>
+<div bind:this={root2}  class=" bg-black w-screen h-347.5" id="Guests">
+    {#if inViewPort2===true}
+    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">countdown{countdown} will be going here (not sure how to do it yet)</p>
 
+    {/if}
 </div>
 
 
 
-<div  class=" bg-black w-screen h-217.5" id="Guests">
-    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers section, being worked on but i have a good idea going foward</p>
-
-</div>
 
