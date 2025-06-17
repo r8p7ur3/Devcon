@@ -34,9 +34,21 @@
 
 <div  class=" bg-black w-screen h-217.5" id="Countdown">
     <div class="relative  top-[100px] size">
-    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Days Hours Minutes Seconds
-    </p>
+      <div class ="bg-amber-300" id="days">
+    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Days</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD}</p>
+    </div>
+    <div class="bg-amber-400" id="hours">
+    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Hours</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{hoursD}</p>
+    </div>
+    <div class="bg-amber-500" id="minutes">
+    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">minutes</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{minutesD}</p>
+    </div>
+    <div class="bg-amber-600" id="seconds">
+    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">seconds</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{secondsD}</p>
+    </div>
+    
     </div>
 
     
 </div>
+ 
