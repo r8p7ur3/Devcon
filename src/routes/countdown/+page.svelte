@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-
+  import pentagon from "$lib/images/devcon-items/pentagon.png"
   let countdown = getCountdown();
   let seconds = 1000; 
   let minutes = seconds * 60;
@@ -32,18 +32,23 @@
   });
 </script>
 
-<div  class=" bg-black w-screen h-217.5" id="Countdown">
-    <div class="relative  top-[100px] size">
-      <div class ="bg-amber-300" id="days">
+<div   class="bg-black w-screen h-214.5 relative overflow-hidden overflow-x-clip border-5 border-black" id="Countdown">
+  <p class="relative text-2xl text-white text-center  font-extrabold top-[100px] motion-delay-900 motion-opacity-in-0 motion-translate-y-in-100 scale-150">Countdown to Devcon</p>
+   <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute  top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon"> 
+    <div class="relative justify-center  top-[400px] flex flex-row space-x-30 rounded-4xl scale-200">
+      <div class ="bg-amber-300 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="days">
     <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Days</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD}</p>
     </div>
-    <div class="bg-amber-400" id="hours">
-    <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Hours</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{hoursD}</p>
+    <div class="bg-amber-400 rounded-xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="hours">
+    <p class="text-xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Hours</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{hoursD}</p>
     </div>
-    <div class="bg-amber-500" id="minutes">
+    <div class="bg-amber-500 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="minutes">
     <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">minutes</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{minutesD}</p>
     </div>
-    <div class="bg-amber-600" id="seconds">
+    <div class="bg-amber-600 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="seconds">
     <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">seconds</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{secondsD}</p>
     </div>
     

@@ -63,14 +63,14 @@
     //typescript end
 </script>
 <!--fix your pngs to high res at some point-->
-<div id="welcome" class="bg-black w-screen h-214.5 relative overflow-visible overflow-x-clip border-5 border-black">
+<div id="welcome" class="bg-black  h-214.5 relative overflow-visible overflow-x-clip border-5 border-black">
 <!-- pentagons-->
-    <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
-    <img class=" absolute  top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
-    <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
-    <img class=" absolute bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute z-0 opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute  z-0 top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute z-0 bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+    <img class=" absolute z-0 bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
 <!-- second div petagons-->    
-     <img class=" absolute opacity-10  top-[1400px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
+     <img class=" absolute opacity-10 z-0  top-[1400px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
     <img class=" absolute  top-[1430px] opacity-10 right-[310px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
     <img class=" absolute  bottom-[-1430px] opacity-10 left-[200px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
     <img class=" absolute bottom-[-1400px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
@@ -82,9 +82,9 @@
 
 
     <!-- logo and stuff-->
-     <img class="absolute motion-delay-2000 motion-opacity-in-0 left-[350px] bottom-[290px]" src="{corklogo}" alt="logo">
-     <img class=" absolute motion-delay-4000 motion-duration-1000 motion-opacity-in-0 left-[820px] bottom-[450px]  w-130" src="{devcon}" alt="devcon">
-     <img class="absolute motion-delay-4000 motion-opacity-in-0 left-[800px] bottom-[340px] w-130 " src="{ucc}" alt="ucc-cs-logo">
+     <img class="absolute motion-delay-500 motion-opacity-in-0 left-[350px] bottom-[290px] -z-0" src="{corklogo}" alt="logo">
+     <img class=" absolute -z-0 motion-delay-1000 motion-duration-1000 motion-opacity-in-0 left-[820px] bottom-[450px]  w-130" src="{devcon}" alt="devcon">
+     <img class="absolute -z-0 motion-delay-1000 motion-opacity-in-0 left-[800px] bottom-[340px] w-130 " src="{ucc}" alt="ucc-cs-logo">
 
 
 
@@ -93,11 +93,11 @@
  <!-- i'll figure something else out-->
 
     
-<div bind:this={root} class=" bg-black w-screen h-257.5" id="About">
+<div bind:this={root} class=" bg-black  h-257.5" id="About">
     {#if inViewPort === true }
 
-    <h1 class="text-center text-6xl font-extrabold motion-delay-500 motion-opacity-in-0 motion-translate-y-in-100">About</h1>
-    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-200 motion-opacity-in-0 motion-translate-y-in-100">Devcon is a Cork-based tech confrence that's held annually in UCC. 
+    <h1 class=" relative text-white text-center top-[250px] text-6xl font-extrabold motion-delay-500 motion-opacity-in-0 motion-translate-y-in-100">About</h1>
+    <p class="relative text-2xl text-white top-[300px] text-center font-extrabold typewriter-10 motion-delay-200 motion-opacity-in-0 motion-translate-y-in-100">Devcon is a Cork-based tech confrence that's held annually in UCC. 
        <br> It brings awareness to  the exciting and innovative technology developments
         <br>from all across ireland, and helps to bridge the gap between students
         <br>and the tech industry. Cork Devcon is an initiative by UCC Netsoc.
@@ -108,9 +108,11 @@
 
 
  
-<div bind:this={root2}  class=" bg-black w-screen h-347.5" id="Guests">
+<div bind:this={root2}  class=" bg-black h-347.5" id="Guests">
     {#if inViewPort2===true}
-    <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">countdown{countdown} will be going here (not sure how to do it yet)</p>
+    <!-- to be done once i begin emailing-->
+     <h1 class=" relative text-white top-[300px] text-center text-6xl font-extrabold motion-delay-500 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers</h1>
+    <p class="text-2xl relative top-[300px] text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">To Be Announced</p>
 
     {/if}
 </div>
