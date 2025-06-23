@@ -92,7 +92,7 @@
 <!-- motion-preset-typewriter not being maintained -_- (oh well)-->
  <!-- i'll figure something else out-->
 
-    
+  <!--this div needs to be tidied, enters viewport while at top of welcome div: Proposal?: increase h px by a bit of welcome div -->
 <div bind:this={root} class=" bg-black  h-257.5" id="About">
     {#if inViewPort === true }
 

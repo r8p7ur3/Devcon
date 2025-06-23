@@ -31,7 +31,7 @@
     
   });
 </script>
-
+<!-- plan here is to have p elements be inside flexbox, then flex-col for mobile devices and flex-row for anything over md breakpoint -->
 <div   class="bg-black w-screen h-214.5 relative overflow-hidden overflow-x-clip border-5 border-black" id="Countdown">
   <p class="relative text-2xl text-white text-center  font-extrabold top-[100px] motion-delay-900 motion-opacity-in-0 motion-translate-y-in-100 scale-150">Countdown to Devcon</p>
    <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
