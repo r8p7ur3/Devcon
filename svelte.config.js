@@ -1,7 +1,8 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-
+import tailwindcssMotion from "tailwindcss-motion";
 /** @type {import('@sveltejs/kit').Config} */
+/** @type {import('tailwindcss').Config} */
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
@@ -12,7 +13,9 @@ const config = {
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter()
-	}
+	},
+	plugins: [tailwindcssMotion],
 };
+
 
 export default config;

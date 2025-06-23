@@ -11,7 +11,7 @@
     <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
     <img class=" absolute bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
     <div class="relative top-[100px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md -bg white">
-    <div class="flex flex-row gap-10 justify-center">
+    <div class="flex flex-col sm:flex-row gap-10 justify-center">
     <div class=" w-100 h-150 bg-amber-100 rounded-4xl hover:scale-105 duration-600">
         <p class="relative text-center bottom-[-50px] font-extrabold scale-200">Free</p>
         <button class="relative bg-amber-500 h-15 w-30 rounded-3xl left-[140px] bottom-[-100px] text-center text-3xl font-extrabold scale-110">€0</button>
