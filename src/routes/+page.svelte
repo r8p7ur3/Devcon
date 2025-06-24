@@ -157,7 +157,7 @@
 
   <!-- Tickets -->
   <section id="tickets" class="motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md">
-    <h1 class="my-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Countdown To DevCon</h1>
+    <h1 class="my-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
 
     <div class="pt-6 flex flex-col lg:flex-row gap-10 justify-center">
         <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
