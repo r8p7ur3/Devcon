@@ -30,27 +30,25 @@
   });
 </script>
 <!-- plan here is to have p elements be inside flexbox, then flex-col for mobile devices and flex-row for anything over md breakpoint -->
-<div class="bg-black w-screen relative overflow-hidden overflow-x-clip" id="Countdown">
+<div   class="bg-black w-screen h-214.5 relative overflow-hidden overflow-x-clip border-5 border-black" id="Countdown">
+<p class="relative text-2xl text-white text-center  font-extrabold top-[100px] motion-delay-900 motion-opacity-in-0 motion-translate-y-in-100 scale-150">Countdown to Devcon</p>
   <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
   <img class=" absolute  top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
   <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon">
   <img class=" absolute bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{pentagon}" alt="pentagon"> 
-
-  <p class="text-2xl text-white text-center font-extrabold motion-delay-900 motion-opacity-in-0 motion-translate-y-in-100 scale-150">Countdown to DevCon</p>
-
-  <div class="flex flex-row justify-center gap-4 m-4">
-    <div class ="bg-amber-300 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="days">
-      <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD} <br> Days</p>
-    </div>
-    <div class="bg-amber-400 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="hours">
-      <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{hoursD} <br> Hours</p>
-    </div>
-    <div class="bg-amber-500 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="minutes">
-      <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{minutesD} <br> Minutes</p>
-    </div>
-    <div class="bg-amber-600 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="seconds">
-      <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{secondsD} <br> Seconds</p>
-    </div>
+  <div class="flex flex-col justify-center place-items-center relative top-[200px] scale-150  gap-5  lg:flex-row">
+    <div class ="bg-amber-300 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="days">
+  <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Days</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD}</p>
+  </div>
+  <div class="bg-amber-400 rounded-xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="hours">
+  <p class="text-xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">Hours</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{hoursD}</p>
+  </div>
+  <div class="bg-amber-500 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="minutes">
+  <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">minutes</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{minutesD}</p>
+  </div>
+  <div class="bg-amber-600 rounded-2xl w-30  motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="seconds">
+  <p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">seconds</p><p class="text-2xl text-white text-center  font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{secondsD}</p>
+  </div>
   </div>
 </div>
  
