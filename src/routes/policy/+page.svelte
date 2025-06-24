@@ -32,7 +32,7 @@
         We cannot guarantee that your data is safe or secure, however, we will always attempt to protect your data.</p>
     
     <h1 class="mt-6 text-white text-center text-5xl font-extrabold">How we store your data</h1>
-    <p class="text-xl font-bold">We maintain transactional logs of payments through evenbrite, who will be responsible for handling your payment information. 
+    <p class="text-xl font-bold">We maintain transactional logs of payments through EventBrite, who will be responsible for handling your payment information. 
        We use this service to process payments, as well as tickets. 
        We do not store your payment information on our servers.
        We may however keep a record of emails that have been registered to transactions for the purpose of 
