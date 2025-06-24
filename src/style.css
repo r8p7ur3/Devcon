@@ -42,3 +42,14 @@
   }
 }
 
+body {
+  @apply text-slate-300;
+}
+
+strong {
+  @apply text-white;
+}
+
+p > a {
+  @apply text-blue-400 underline;
+}
