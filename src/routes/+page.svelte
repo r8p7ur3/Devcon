@@ -149,7 +149,7 @@
   </section>
 
   <!-- Explainer -->
-  <section id="explainer" class="bg-black">
+  <section id="explainer" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">What's Happening this Year?</h1>
     <!-- ToDo: Add what is ACTUALLY happening during the day, what events, food, drink, etc.    for explaining to ppl who've never heard of devcon -->
     <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas provident accusantium dicta dignissimos quas facere mollitia rem itaque cumque molestias.</p>
@@ -193,11 +193,11 @@
         </a>
     </div>
 
-    <p class="mt-4 text-center">By ordering a ticket, you agree to receive emails informing you about the event. Read the <a href="">privacy policy</a> for more information.</p>
+    <p class="mt-4 text-center">By ordering a ticket, you agree to receive emails informing you about the event. Read the <a href="policy#top">privacy policy</a> for more information.</p>
   </section>
 
   <!-- The Team (+ Contact Us Section) -->
-  <section id="the-team" class="bg-black">
+  <section id="the-team" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">The DevCon Team</h1>
 
     <p class="text-center">Want to get in touch with us? Email us at <a href="mailto:mailto:devcon@netsoc.co" target="_blank">mailto:devcon@netsoc.co</a>.</p>

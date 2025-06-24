@@ -4,11 +4,7 @@
 </script>
 
 
-
-
-
-
-<div class="flex justify-center w-full h-full bg-black relative overflow-hidden">
+<div class="flex justify-center w-full h-full bg-black relative overflow-hidden" id="top">
   <section id="Policy" class="p-5 max-w-[70%] motion-opacity-in-5 motion-delay-200 flex flex-col justify-center  gap-8 bg-black w-screen">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold">Privacy Policy</h1>
 
