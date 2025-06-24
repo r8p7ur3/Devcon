@@ -1,12 +1,10 @@
 @import "tailwindcss";
-
 @plugin "tailwindcss-motion";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-
---color-primary-50: #fff5f2;
+  --color-primary-50: #fff5f2;
   --color-primary-100: #fff1ee;
   --color-primary-200: #ffe4de;
   --color-primary-300: #ffd5cc;
@@ -27,9 +25,6 @@
   --color-secondary-700: #0369a1;
   --color-secondary-800: #075985;
   --color-secondary-900: #0c4a6e;
-
-
-
 }
 
 @source "../node_modules/flowbite-svelte/dist";
@@ -42,14 +37,52 @@
   }
 }
 
+
+/* Site Styles */
 body {
-  @apply text-slate-300;
+  @apply text-slate-300 bg-[#1f1f1f];
 }
 
 strong {
   @apply text-white;
 }
+strong > em {
+  color: var(--color-primary-500);
+  @apply text-lg;
+}
 
 p > a {
   @apply text-blue-400 underline;
+}
+
+
+/* DevCon Logo Group: Grid */
+.devcon-logo-group {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 45%;
+}
+    
+.dlg-cork {
+  grid-row: span 2 / span 2;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.dlg-devcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.dlg-ucc {
+  grid-column-start: 2;
+  grid-row-start: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
