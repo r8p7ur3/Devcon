@@ -61,7 +61,7 @@
 
 <main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
-  <section id="welcome" class="p-5 flex flex-row justify-center items-center gap-8 ">
+  <section id="welcome" class="p-5 flex flex-row justify-center items-center gap-8">
 
     <!-- Logo Group -->
     <div class="devcon-logo-group">
@@ -111,7 +111,7 @@
   </section>
 
   <!-- Explainer -->
-  <section id="explainer" class="p-5  flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="explainer" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">What's Happening this Year?</h1>
     <!-- ToDo: Add what is ACTUALLY happening during the day, what events, food, drink, etc.    for explaining to ppl who've never heard of devcon -->
      <div class="max-w-[60ch] space-y-5">
@@ -180,7 +180,7 @@
       </div>
       <div class="person text-center">
         <img src="{duck3}" alt="">
-        <h3 class="font-bold">El Morley</h3>
+        <h3 class="font-bold">El Egan Morley</h3>
         <h4>Sponsorship</h4>
       </div>
       <div class="person text-center">
