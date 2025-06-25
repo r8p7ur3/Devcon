@@ -56,48 +56,13 @@
 
 
 
-  // ====================================
-  // ToDo: Possibly remove the following?
-  // ====================================
-  onMount(() => {
-    if (!root) return //ok so when reloading page there wasn't enough time for the DOM to load before this ran, so if no root 
-    // which is binded to the divs is found it simply keeps going till it is 
-    let observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        inViewPort = true;
-        observer.disconnect();
-      };
      
-    });
-  });
-   let observer2 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        inViewPort2 = true;
-        observer2.disconnect();
-      };
-     
-    });
-  });
-   let observer3 = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        inViewPort3 = true;
-        observer3.disconnect();
-      };
-     
-    });
-  });
-    observer.observe(root);
-    observer2.observe(root2);
-    
-  });
+
 </script>
 
 
 
-<main>
+<main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
   <section id="welcome" class="p-5 flex flex-row justify-center items-center gap-8">
 
