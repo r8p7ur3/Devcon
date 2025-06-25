@@ -4,22 +4,19 @@
     import asset_devcon from "$lib/images/devcon-items/devcon.png"
     import asset_ucc from "$lib/images/devcon-items/ucc.png"
 
-    //for when divs enter viewport
-    // i tried having a dedicated .svelte for it and importing but it wouldn't import script
-    import { onDestroy, onMount } from "svelte";
 
-  let inViewPort = false;
-  let inViewPort2 = false;
-  let inViewPort3 = false;
-  /**@type {HTMLElement}*/
-  let root;
-  /**@type {HTMLElement}*/
-  let root2;
-  /**@type {HTMLElement}*/
-  let root3;
-  //for tracking
-  let done = false;
+    // for timer
+    import { onMount } from "svelte";
 
+    // baby ducks :3
+    import duck1 from "$lib/images/BabyDucks/BrownishOne.png"
+    import duck2 from "$lib/images/BabyDucks/DinoOne.png"
+    import duck3 from "$lib/images/BabyDucks/OneInGrass.png"
+    import duck4 from "$lib/images/BabyDucks/SittingOne.png"
+    import duck5 from "$lib/images/BabyDucks/SwimmingOne.png"
+
+    import duck6 from "$lib/images/BabyDucks/WetOne.png"
+    import duck7 from "$lib/images/BabyDucks/YellowOne.png"
 
 
 
@@ -117,7 +114,11 @@
   <section id="explainer" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">What's Happening this Year?</h1>
     <!-- ToDo: Add what is ACTUALLY happening during the day, what events, food, drink, etc.    for explaining to ppl who've never heard of devcon -->
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas provident accusantium dicta dignissimos quas facere mollitia rem itaque cumque molestias.</p>
+     <div class="max-w-[60ch] space-y-5">
+    <p class="text-center">Attendees of can look forward to a diverse and engaging lineup of talks and presentations designed to inform, inspire, and connect. The event will include focused presentations by professionals in their respective fields on a diverse set of technologies.</p>
+    <p class="text-center">There will be oppertunities to directly engage with speakers, ask questions and connect with fellow attendees from both academia and Industry </p>
+    <p class="text-center">DevCon is designed to be inclusive and accessible, welcoming students, professionals, and anyone with a passion for technology and innovation.  </p>
+      </div>
   </section>
 
   <!-- Tickets -->
@@ -165,55 +166,50 @@
   <section id="the-team" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">The DevCon Team</h1>
 
-    <p class="text-center">Want to get in touch with us? Email us at <a href="mailto:mailto:devcon@netsoc.co" target="_blank">mailto:devcon@netsoc.co</a>.</p>
 
-
-    <div class="w-full flex flex-col lg:flex-row gap-4 items-center justify-center">
-      <div class="person">
-        <img src="" alt="">
-        <h3>Person Name</h3>
-        <h4>Job Title</h4>
+    <div class="w-full flex flex-col z-10 lg:flex-row gap-4 items-center justify-center">
+      <div class="person text-center">
+        <img src="{duck1}" alt="">
+        <h3 class="font-bold">Jonathan Namanda</h3>
+        <h4>Director</h4>
       </div>
-      <div class="person">
-        <img src="" alt="">
-        <h3>Person Name</h3>
-        <h4>Job Title</h4>
+      <div class="person text-center">
+        <img src="{duck2}" alt="">
+        <h3 class="font-bold">Ivan Fonagy</h3>
+        <h4>Vice Director</h4>
       </div>
-      <div class="person">
-        <img src="" alt="">
-        <h3>Person Name</h3>
-        <h4>Job Title</h4>
+      <div class="person text-center">
+        <img src="{duck3}" alt="">
+        <h3 class="font-bold">El Egan Morley</h3>
+        <h4>Sponsorship</h4>
       </div>
-      <div class="person">
-        <img src="" alt="">
-        <h3>Person Name</h3>
-        <h4>Job Title</h4>
+      <div class="person text-center">
+        <img src="{duck4}" alt="">
+        <h3 class="font-bold">Scott Widger</h3>
+        <h4>Building Layout Managment</h4>
       </div>
-      <div class="person">
-        <img src="" alt="">
-        <h3>Person Name</h3>
-        <h4>Job Title</h4>
+      <div class="person text-center">
+        <img src="{duck5}" alt="">
+        <h3 class="font-bold">Georgia Baker</h3>
+        <h4>PR/Social</h4>
       </div>
     </div>
+
+    <p class="text-center">Want to get in touch with us? Email us at <a href="mailto:mailto:devcon@netsoc.co" target="_blank">devcon@netsoc.co</a>.</p>
+
   </section>
 
 
-  <!-- Jonathan's Spinners (! ToDo: adjust so they don't extend page boundarys as they currently do) -->
-  <div>
+  <!-- Todo: figure out how to deal with on hover scaling issue with ticket:online and pentagon in background -->
+  <div class="">
     <!-- pentagons-->
-    <img class=" absolute z-0 opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  z-0 top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute z-0 bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute z-0 bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <!-- second div petagons-->    
-    <img class=" absolute opacity-10 z-0  top-[1400px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  top-[1430px] opacity-10 right-[310px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  bottom-[-1430px] opacity-10 left-[200px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute bottom-[-1400px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <!--Third div pentagons -->
-    <img class=" absolute opacity-10  top-[2300px] left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  top-[-2330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  bottom-[-2330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute bottom-[-2300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class="max-lg:hidden absolute  top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute  bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">  
+    <img class=" absolute opacity-10   top-[800px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class="absolute max-lg:hidden  top-[600px]  opacity-10 right-[10px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+  
+
   </div>
 </main>
