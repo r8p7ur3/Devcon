@@ -38,12 +38,12 @@ function toggleNav(){
 };
 </script>
 
-<header class="sticky z-20 top-0 bg-black py-6 px-8 font-extrabold text-2xl flex flex-col lg:flex-row justify-between items-center">
+<header class="sticky z-20 top-0 bg-black py-6 px-8 font-extrabold text-2xl flex flex-col nav:flex-row justify-between items-center">
   <a class="max-w-[45%] md:max-w-[20%] lg:max-w-[10%]" href="/#welcome"><img class=""  src="{assets_devcon}" alt="DevCon"></a>
 
-  <button id="header-nav-toggle" class="visible lg:hidden text-4xl" onclick={toggleNav}>☰</button>
+  <button id="header-nav-toggle" class="visible nav:hidden text-4xl" onclick={toggleNav}>☰</button>
   
-  <nav id="header-nav" style="display: none;" class="hidden lg:!flex flex-col lg:flex-row gap-8  lg:gap-2 lg:space-x-10 lg:justify-center"> <!-- This inline style display: none; is intentionally here and can be ignored, it is only here for the benefit of my JavaScript (as the script requires an inline style to "toggle" the mobile nav as I've done.) -->
+  <nav id="header-nav" style="display: none;" class="hidden nav:!flex flex-col nav:flex-row gap-8  nav:gap-2 nav:space-x-10 nav:justify-center"> <!-- This inline style display: none; is intentionally here and can be ignored, it is only here for the benefit of my JavaScript (as the script requires an inline style to "toggle" the mobile nav as I've done.) -->
     <a class="w-full lg:w-auto transform motion-safe:hover:scale-110 text-white hover:text-orange-600 transition duration-500" href="/#guests">Speakers</a>
     <a class="w-full lg:w-auto transform motion-safe:hover:scale-110 text-white hover:text-orange-600 transition duration-500" href="/#countdown">Countdown</a>
     <a class="w-full lg:w-auto transform motion-safe:hover:scale-110 text-white hover:text-orange-600 transition duration-500" href="/#explainer">Whats Happening?</a>

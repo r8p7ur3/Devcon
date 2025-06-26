@@ -61,10 +61,10 @@
 
 <main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
-  <section id="welcome" class="p-5 min-h-[700px]  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
+  <section id="welcome" class="p-5 min-h-[500px] lg:min-h-[700px] gap-y-40  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
 
     <!-- Logo Group -->
-    <div class="devcon-logo-group scale-150 lg:scale-100 items-center right-10 relative">
+    <div class="devcon-logo-group scale-250 sm:scale-200 md:scale-150 lg:scale-100 items-center right-3 sm:right-10 relative">
       <div class="dlg-cork">
         <img class=" motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
       </div>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Intro spiel -->
-    <div class="max-w-[65ch]">
+    <div class="max-w-[65ch] motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100">
       <p>DevCon is a Cork-based <strong><em>Tech Conference</em></strong> about <strong><em>Bridging the Gap between Students and the Tech Industry</em></strong> that's held annually in UCC.</p>
       <p>Showcasing the exciting and innovative technology developments from all across Ireland</p>
       <p>Cork Devcon is an initiative by <a href="https://netsoc.co/" target="_blank">UCC Netsoc</a>.</p>
@@ -84,14 +84,14 @@
   </section>
 
   <!-- Guest speakers -->
-  <section id="guests" class="p-5 min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="guests" class="p-5 min-h-[400px] lg:min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers</h1>
 
     <p><strong class="text-center motion-delay-1400 motion-opacity-in-0 motion-translate-y-in-100" style="color: red;">To Be Announced.</strong></p>
   </section>
 
   <!-- Countdown -->
-  <section id="countdown" class="p-5 min-h-[700px] m-auto flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="countdown" class="p-5 min-h-[400px] lg:min-h-[700px] m-auto flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Countdown To DevCon</h1>
 
     <div class="flex mt-6 flex-col lg:flex-row justify-center gap-4 m-4">
@@ -111,10 +111,10 @@
   </section>
 
   <!-- Explainer -->
-  <section id="explainer" class="p-5 min-h-[700px]  flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="explainer" class="p-5 min-h-[800px] lg:min-h-[700px]  flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">What's Happening this Year?</h1>
     <!-- ToDo: Add what is ACTUALLY happening during the day, what events, food, drink, etc.    for explaining to ppl who've never heard of devcon -->
-     <div class="max-w-[60ch] space-y-5 mt-6">
+     <div class="max-w-[60ch] space-y-5 mt-6 motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100">
     <p class="text-center">Attendees of can look forward to a diverse and engaging lineup of talks and presentations designed to inform, inspire, and connect. The event will include focused presentations by professionals in their respective fields on a diverse set of technologies.</p>
     <p class="text-center">There will be oppertunities to directly engage with speakers, ask questions and connect with fellow attendees from both academia and Industry </p>
     <p class="text-center">DevCon is designed to be inclusive and accessible, welcoming students, professionals, and anyone with a passion for technology and innovation.  </p>
@@ -122,7 +122,7 @@
   </section>
 
   <!-- Tickets -->
-  <section id="tickets" class=" min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
+  <section id="tickets" class=" min-h-[700px] lg:min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
     <div class=" relative items-center lg:top-[220px]">
     <h1 class=" text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
     <h2 class="text-white text-center text-2xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Ticket sales go live 10th July</h2>
@@ -133,7 +133,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 0</button>
             <ul class="ml-2 list-disc">
                 <li>Access to all dev con talks online</li>
-                <li>Get emailed on <strong>October 1st</strong> with link to event</li>
+                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
             </ul>
         </a>
 
@@ -142,7 +142,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 5</button>
             <ul class="ml-2 list-disc">
                 <li>Access to <strong>all DevCon talks in person</strong></li>
-                <li>Get emailed on <strong>October 1st</strong> with link to event</li>
+                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
                 <li><strong>Food provided</strong> at event</li>
                 <li>Access to <strong>recordings of talks</strong></li>
                 <li><strong>Goodie Bag</strong></li>
@@ -154,7 +154,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 2</button>
             <ul class="ml-2 list-disc">
                 <li>Access to all <strong>DevCon talks online</strong></li>
-                <li>Get emailed on <strong>(insert date)</strong> with link to event</li>
+                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
                 <li>Access to <strong>recordings of talks</strong></li>
                 <li><strong>Goodie Bag</strong></li>
             </ul>
@@ -170,7 +170,7 @@
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">The DevCon Team</h1>
 
 
-    <div class="w-full flex flex-col z-10 lg:flex-row gap-4 items-center justify-center">
+    <div class="w-full flex flex-col z-10 lg:flex-row gap-4 items-center justify-center motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100">
       <div class="person text-center">
         <img src="{duck1}" alt="">
         <h3 class="font-bold">Jonathan Namanda</h3>
@@ -211,8 +211,8 @@
     <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class=" absolute max-lg:hidden bottom-[2430px] opacity-10 right-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class=" absolute max-lg:hidden bottom-[1530px] opacity-10 right-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  bottom-[2130px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
-    <img class=" absolute  bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">  
+    <img class=" absolute max-lg:hidden  bottom-[2130px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute  bottom-[300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">  
     <img class=" absolute opacity-10   top-[800px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class="absolute max-lg:hidden  top-[600px]  opacity-10 right-[10px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
   
