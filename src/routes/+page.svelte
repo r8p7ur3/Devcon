@@ -61,12 +61,12 @@
 
 <main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
-  <section id="welcome" class="p-5 min-h-[500px]  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
+  <section id="welcome" class="p-5 min-h-[700px]  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
 
     <!-- Logo Group -->
-    <div class="devcon-logo-group scale-150 lg:scale-100">
+    <div class="devcon-logo-group scale-150 lg:scale-100 items-center">
       <div class="dlg-cork">
-        <img class="max-w-[80%] motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
+        <img class=" motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
       </div>
       <div class="dlg-devcon">
         <img class="motion-delay-700 motion-duration-1000 motion-opacity-in-0" src="{asset_devcon}" alt="devcon">
@@ -94,7 +94,7 @@
   <section id="countdown" class="p-5 min-h-[700px] m-auto flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Countdown To DevCon</h1>
 
-    <div class="flex mt-6 flex-row justify-center gap-4 m-4">
+    <div class="flex mt-6 flex-col lg:flex-row justify-center gap-4 m-4">
       <div class ="bg-amber-300 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="days">
         <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD} <br> Days</p>
       </div>
@@ -122,22 +122,22 @@
   </section>
 
   <!-- Tickets -->
-  <section id="tickets" class="min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
-    <div class=" relative lg:top-[220px]">
+  <section id="tickets" class=" min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
+    <div class=" relative items-center lg:top-[220px]">
     <h1 class=" text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
     <h2 class="text-white text-center text-2xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Ticket sales go live 10th July</h2>
 
-    <div class="pt-6 mt-6 flex flex-col lg:flex-row gap-10 justify-center">
-        <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
+    <div class="pt-6 mt-6 flex flex-col lg:flex-row gap-10 justify-center items-center">
+        <a class="flex flex-col lg:min-h-[250px] justify-self-center lg:justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
             <p class="text-center font-extrabold scale-200 text-white">Free</p>
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 0</button>
             <ul class="ml-2 list-disc">
                 <li>Access to all dev con talks online</li>
-                <li>Get emailed on (insert date) with link to event</li>
+                <li>Get emailed on <strong>October 1st</strong> with link to event</li>
             </ul>
         </a>
 
-        <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl relative   hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
+        <a class="flex flex-col lg:min-h-[250px] justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl relative   hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
             <p class="text-center font-extrabold scale-200 text-white">In-Person</p>
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 5</button>
             <ul class="ml-2 list-disc">
@@ -149,7 +149,7 @@
             </ul>
         </a>
 
-        <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
+        <a class="flex flex-col lg:min-h-[250px] justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
             <p class="text-center font-extrabold scale-200 text-white">Online</p>
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 2</button>
             <ul class="ml-2 list-disc">
