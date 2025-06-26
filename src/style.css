@@ -27,6 +27,7 @@
   --color-secondary-900: #0c4a6e;
 /*I rounded up 68.75 which is about 1100px i swear*/
   --breakpoint-nav: 69rem;
+  --breakpoint-sm: 24rem; 
 }
 
 @source "../node_modules/flowbite-svelte/dist";

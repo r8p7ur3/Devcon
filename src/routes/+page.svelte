@@ -61,10 +61,10 @@
 
 <main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
-  <section id="welcome" class="p-5 min-h-[500px] lg:min-h-[700px] gap-y-40  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
+  <section id="welcome" class="p-7 min-h-[200px] sm:min-h-[500px] lg:min-h-[700px] gap-y-38  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
 
     <!-- Logo Group -->
-    <div class="devcon-logo-group scale-250 sm:scale-200 md:scale-150 lg:scale-100 items-center right-3 sm:right-10 relative">
+    <div class="devcon-logo-group scale-250 sm:scale-200 md:scale-150 lg:scale-100 items-center right-3 sm:right-10 relative top-3">
       <div class="dlg-cork">
         <img class=" motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
       </div>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Intro spiel -->
-    <div class="max-w-[65ch] motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100">
+    <div class="max-w-[65ch] motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100 relative top-[-70px] sm:top-[0px]">
       <p>DevCon is a Cork-based <strong><em>Tech Conference</em></strong> about <strong><em>Bridging the Gap between Students and the Tech Industry</em></strong> that's held annually in UCC.</p>
       <p>Showcasing the exciting and innovative technology developments from all across Ireland</p>
       <p>Cork Devcon is an initiative by <a href="https://netsoc.co/" target="_blank">UCC Netsoc</a>.</p>
@@ -84,7 +84,7 @@
   </section>
 
   <!-- Guest speakers -->
-  <section id="guests" class="p-5 min-h-[400px] lg:min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="guests" class="p-5 min-h-[200px] sm:min-h-[400px] lg:min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers</h1>
 
     <p><strong class="text-center motion-delay-1400 motion-opacity-in-0 motion-translate-y-in-100" style="color: red;">To Be Announced.</strong></p>
