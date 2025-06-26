@@ -67,6 +67,8 @@ p > a {
   grid-template-rows: repeat(2, 1fr);
   max-width: 45%;
 }
+
+
     
 .dlg-cork {
   grid-row: span 2 / span 2;
