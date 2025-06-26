@@ -61,10 +61,10 @@
 
 <main class="relative overflow-clip">
   <!-- Welcome: Logo and intro -->
-  <section id="welcome" class="p-5 flex flex-row justify-center items-center gap-8">
+  <section id="welcome" class="p-5 min-h-[500px]  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
 
     <!-- Logo Group -->
-    <div class="devcon-logo-group">
+    <div class="devcon-logo-group scale-150 lg:scale-100">
       <div class="dlg-cork">
         <img class="max-w-[80%] motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
       </div>
@@ -84,17 +84,17 @@
   </section>
 
   <!-- Guest speakers -->
-  <section id="guests" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="guests" class="p-5 min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Guests Speakers</h1>
 
     <p><strong class="text-center motion-delay-1400 motion-opacity-in-0 motion-translate-y-in-100" style="color: red;">To Be Announced.</strong></p>
   </section>
 
   <!-- Countdown -->
-  <section id="countdown" class="p-5 flex flex-col justify-center items-center gap-8">
+  <section id="countdown" class="p-5 min-h-[700px] m-auto flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Countdown To DevCon</h1>
 
-    <div class="flex flex-row justify-center gap-4 m-4">
+    <div class="flex mt-6 flex-row justify-center gap-4 m-4">
       <div class ="bg-amber-300 rounded-2xl w-30 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100" id="days">
         <p class="text-2xl text-white text-center font-extrabold typewriter-10 motion-delay-1300 motion-opacity-in-0 motion-translate-y-in-100">{daysD} <br> Days</p>
       </div>
@@ -111,10 +111,10 @@
   </section>
 
   <!-- Explainer -->
-  <section id="explainer" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="explainer" class="p-5 min-h-[700px]  flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">What's Happening this Year?</h1>
     <!-- ToDo: Add what is ACTUALLY happening during the day, what events, food, drink, etc.    for explaining to ppl who've never heard of devcon -->
-     <div class="max-w-[60ch] space-y-5">
+     <div class="max-w-[60ch] space-y-5 mt-6">
     <p class="text-center">Attendees of can look forward to a diverse and engaging lineup of talks and presentations designed to inform, inspire, and connect. The event will include focused presentations by professionals in their respective fields on a diverse set of technologies.</p>
     <p class="text-center">There will be oppertunities to directly engage with speakers, ask questions and connect with fellow attendees from both academia and Industry </p>
     <p class="text-center">DevCon is designed to be inclusive and accessible, welcoming students, professionals, and anyone with a passion for technology and innovation.  </p>
@@ -122,10 +122,12 @@
   </section>
 
   <!-- Tickets -->
-  <section id="tickets" class="motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md">
-    <h1 class="my-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
+  <section id="tickets" class="min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
+    <div class=" relative lg:top-[220px]">
+    <h1 class=" text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
+    <h2 class="text-white text-center text-2xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Ticket sales go live 10th July</h2>
 
-    <div class="pt-6 flex flex-col lg:flex-row gap-10 justify-center">
+    <div class="pt-6 mt-6 flex flex-col lg:flex-row gap-10 justify-center">
         <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
             <p class="text-center font-extrabold scale-200 text-white">Free</p>
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 0</button>
@@ -135,9 +137,9 @@
             </ul>
         </a>
 
-        <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl relative top-[-1rem] scale-110 hover:scale-115 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
+        <a class="flex flex-col justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl relative   hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
             <p class="text-center font-extrabold scale-200 text-white">In-Person</p>
-            <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 2</button>
+            <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 5</button>
             <ul class="ml-2 list-disc">
                 <li>Access to <strong>all DevCon talks in person</strong></li>
                 <li>Get emailed on <strong>October 1st</strong> with link to event</li>
@@ -160,10 +162,11 @@
     </div>
 
     <p class="mt-4 text-center">By ordering a ticket, you agree to receive emails informing you about the event. Read the <a href="policy#top">privacy policy</a> for more information.</p>
+    </div>
   </section>
 
   <!-- The Team (+ Contact Us Section) -->
-  <section id="the-team" class="p-5 flex flex-col justify-center items-center gap-8 bg-black">
+  <section id="the-team" class="p-5 min-h-[700px] flex flex-col justify-center items-center gap-8 bg-black">
     <h1 class="mt-6 text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">The DevCon Team</h1>
 
 
@@ -180,7 +183,7 @@
       </div>
       <div class="person text-center">
         <img src="{duck3}" alt="">
-        <h3 class="font-bold">El Egan Morley</h3>
+        <h3 class="font-bold">El Morley</h3>
         <h4>Sponsorship</h4>
       </div>
       <div class="person text-center">
@@ -206,6 +209,9 @@
     <img class=" absolute opacity-10  top-0 left-[-350px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class="max-lg:hidden absolute  top-[-330px] opacity-10 right-[210px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class=" absolute  bottom-[-330px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute max-lg:hidden bottom-[2430px] opacity-10 right-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute max-lg:hidden bottom-[1530px] opacity-10 right-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
+    <img class=" absolute  bottom-[2130px] opacity-10 left-[100px]  size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class=" absolute  bottom-[-300px] motion-opacity-in-0 opacity-10 left-[1550px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">  
     <img class=" absolute opacity-10   top-[800px] left-[-250px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
     <img class="absolute max-lg:hidden  top-[600px]  opacity-10 right-[10px] size-110 scale-in-7 motion-duration-7000 motion-rotate-loop-360/reset motion-ease-linear" src="{asset_pentagon}" alt="pentagon">
