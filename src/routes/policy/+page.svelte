@@ -28,11 +28,11 @@
         We cannot guarantee that your data is safe or secure, however, we will always attempt to protect your data.</p>
     
     <h1 class="mt-6 text-white text-center text-5xl font-extrabold">How we store your data</h1>
-    <p class="text-xl font-bold">We maintain transactional logs of payments through Eventbrite, who will be responsible for handling your payment information. 
+    <p class="text-xl font-bold">We maintain transactional logs of payments through Stripe, who will be responsible for handling your payment information. 
        We use this service to process payments, as well as tickets. 
        We do not store your payment information on our servers.
        We may however keep a record of emails that have been registered to transactions for the purpose of 
-       verificying individuals to come to collect goodiebags at subsequent netsoc events</p>
+       verificying individuals to come to collect goodiebags.</p>
 
     <h1 class="mt-6 text-white text-center text-5xl font-extrabold">Changes to this privacy policy</h1>
     <p class="text-xl font-bold">We may update this privacy policy from time to time. 
