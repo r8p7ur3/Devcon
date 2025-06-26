@@ -64,7 +64,7 @@
   <section id="welcome" class="p-5 min-h-[700px]  flex flex-col lg:flex-row justify-center items-center gap-8 bg-black">
 
     <!-- Logo Group -->
-    <div class="devcon-logo-group scale-150 lg:scale-100 items-center">
+    <div class="devcon-logo-group scale-150 lg:scale-100 items-center right-10 relative">
       <div class="dlg-cork">
         <img class=" motion-delay-500 motion-duration-1000 motion-opacity-in-0" src="{asset_corklogo}" alt="logo">
       </div>
