@@ -38,7 +38,7 @@ function toggleNav(){
 };
 </script>
 
-<header class="sticky z-20 top-0 bg-black py-6 px-8 font-extrabold text-2xl flex flex-col nav:flex-row justify-between items-center">
+<header class="sticky z-50 top-0 bg-black py-6 px-8 font-extrabold text-2xl flex flex-col nav:flex-row justify-between items-center">
   <a class="max-w-[45%] md:max-w-[20%] lg:max-w-[10%]" href="/#welcome"><img class=""  src="{assets_devcon}" alt="DevCon"></a>
 
   <button id="header-nav-toggle" class="visible nav:hidden text-4xl" onclick={toggleNav}>☰</button>
