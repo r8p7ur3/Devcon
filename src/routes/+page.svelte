@@ -9,14 +9,12 @@
     import { onMount } from "svelte";
 
     // baby ducks :3
-    import duck1 from "$lib/images/BabyDucks/BrownishOne.png"
-    import duck2 from "$lib/images/BabyDucks/DinoOne.png"
-    import duck3 from "$lib/images/BabyDucks/OneInGrass.png"
-    import duck4 from "$lib/images/BabyDucks/SittingOne.png"
-    import duck5 from "$lib/images/BabyDucks/SwimmingOne.png"
+    import jona from "$lib/images/1:1/jonathan.jpg"
+    import el from "$lib/images/1:1/el.png"
+    import scott from "$lib/images/1:1/scott.jpg"
+    import ivan from "$lib/images/1:1/ivan.jpg"
 
-    import duck6 from "$lib/images/BabyDucks/WetOne.png"
-    import duck7 from "$lib/images/BabyDucks/YellowOne.png"
+
 
 
 
@@ -33,7 +31,7 @@
   let minutesD = 0;
   let secondsD = 0;
   function getCountdown() {
-    const devconDate = new Date("2025-11-01T00:00:00");
+    const devconDate = new Date("2025-09-27T00:00:00");
     return devconDate.getTime() - Date.now();    
   }
   
@@ -125,7 +123,7 @@
   <section id="tickets" class=" min-h-[700px] lg:min-h-[1000px] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md bg-black">
     <div class=" relative items-center lg:top-[220px]">
     <h1 class=" text-white text-center text-6xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Get Tickets</h1>
-    <h2 class="text-white text-center text-2xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Ticket sales go live 10th July</h2>
+    <h2 class="text-white text-center text-2xl font-extrabold motion-delay-1200 motion-opacity-in-0 motion-translate-y-in-100">Ticket sales go live 23rd July</h2>
 
     <div class="pt-6 mt-6 flex flex-col lg:flex-row gap-10 justify-center items-center">
         <a class="flex flex-col lg:min-h-[250px] justify-self-center lg:justify-start items-center gap-5 w-[95%] lg:w-[25%] bg-[#3f3301] text-slate-300 drop-shadow-2xl rounded-4xl hover:scale-105 duration-600 hover:cursor-pointer p-3" href="javascript:void(0)">
@@ -172,30 +170,26 @@
 
     <div class="w-full flex flex-col z-10 lg:flex-row gap-4 items-center justify-center motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100">
       <div class="person text-center">
-        <img src="{duck1}" alt="">
+        <img class="w-[300px] h-[300px] md:w-[400px] md:h-[400px]" src="{jona}" alt="">
         <h3 class="font-bold">Jonathan Namanda</h3>
         <h4>Director</h4>
       </div>
       <div class="person text-center">
-        <img src="{duck2}" alt="">
+        <img class="w-[300px] h-[300px] md:w-[400px] md:h-[400px]" src="{ivan}" alt="">
         <h3 class="font-bold">Ivan Fonagy</h3>
         <h4>Vice Director</h4>
       </div>
       <div class="person text-center">
-        <img src="{duck3}" alt="">
+        <img class="w-[300px] h-[300px] md:w-[400px] md:h-[400px]" src="{el}" alt="">
         <h3 class="font-bold">El Morley</h3>
         <h4>Sponsorship</h4>
       </div>
       <div class="person text-center">
-        <img src="{duck4}" alt="">
+        <img class="w-[300px] h-[300px] md:w-[400px] md:h-[400px]" src="{scott}" alt="">
         <h3 class="font-bold">Scott Widger</h3>
         <h4>Building Layout Managment</h4>
       </div>
-      <div class="person text-center">
-        <img src="{duck5}" alt="">
-        <h3 class="font-bold">Georgia Baker</h3>
-        <h4>PR/Social</h4>
-      </div>
+      
     </div>
 
     <p class="text-center">Want to get in touch with us? Email us at <a href="mailto:mailto:devcon@netsoc.co" target="_blank">devcon@netsoc.co</a>.</p>
