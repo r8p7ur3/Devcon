@@ -76,7 +76,7 @@
     <div class="max-w-[65ch] motion-delay-1500 motion-opacity-in-0 motion-translate-y-in-100 relative top-[-70px] sm:top-[0px]">
       <p>DevCon is a Cork-based <strong><em>Tech Conference</em></strong> about <strong><em>Bridging the Gap between Students and the Tech Industry</em></strong> that's held annually in UCC.</p>
       <p>Showcasing the exciting and innovative technology developments from all across Ireland</p>
-      <p>Cork Devcon is an initiative by <a href="https://netsoc.co/" target="_blank">UCC Netsoc</a>.</p>
+      <p>Cork DevCon is an initiative by <a href="https://netsoc.co/" target="_blank">UCC Netsoc</a>.</p>
     </div>
 
   </section>
@@ -131,7 +131,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 0</button>
             <ul class="ml-2 list-disc">
                 <li>Access to all dev con talks online</li>
-                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
+                <li>Get emailed on <strong>September 27th</strong> with link to event</li>
             </ul>
         </a>
 
@@ -140,7 +140,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 5</button>
             <ul class="ml-2 list-disc">
                 <li>Access to <strong>all DevCon talks in person</strong></li>
-                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
+                <li>Get emailed on <strong>September 27th</strong> with link to event</li>
                 <li><strong>Food provided</strong> at event</li>
                 <li>Access to <strong>recordings of talks</strong></li>
                 <li><strong>Goodie Bag</strong></li>
@@ -152,7 +152,7 @@
             <button class="bg-amber-500 w-[60%] rounded-3xl text-center text-3xl font-extrabold scale-110">€ 2</button>
             <ul class="ml-2 list-disc">
                 <li>Access to all <strong>DevCon talks online</strong></li>
-                <li>Get emailed on <strong>November 1st</strong> with link to event</li>
+                <li>Get emailed on <strong>September 27th</strong> with link to event</li>
                 <li>Access to <strong>recordings of talks</strong></li>
                 <li><strong>Goodie Bag</strong></li>
             </ul>

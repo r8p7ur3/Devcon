@@ -10,7 +10,7 @@
 
     <h1 class="mt-6 text-white text-center text-5xl font-extrabold">How we use your data</h1>
 
-    <p class="text-xl font-bold">We use your data to provide the service of Devcon to you. 
+    <p class="text-xl font-bold">We use your data to provide the service of DevCon to you. 
        We will never use your personally-identifiable information for any use outside of this service. 
        We will only use your data for the purposes specified in this privacy policy. 
        We will not sell or rent your data to third parties.</p>
